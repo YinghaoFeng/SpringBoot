@@ -1,0 +1,9 @@
+spring: 
+  thymeleaf:
+    prefix: classpath:/templates/pages/ 
+  messages: 
+    basename: i18n/Messages
+
+server: 
+  port: 80   # 定义服务端口
+

@@ -1,0 +1,12 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>SpringBoot模版渲染</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+</head>
+<body>
+	<h1>对不起，服务器自己出现了点小问题，请您稍微等待一下，如果还不行，就滚吧！</h1>
+	<h2 th:text="${url}"></h2>
+	<h2 th:text="${exception.message}"></h2>
+</body>
+</html>

@@ -1,0 +1,14 @@
+spring: 
+  rabbitmq:
+    addresses: rabbitmq-single   # RabbitMQ主机名称
+    username: mldn               # 用户名 
+    password: java               # 密码
+    virtual-host: /              # 虚拟主机
+  thymeleaf:
+    prefix: classpath:/templates/pages/ 
+  messages: 
+    basename: i18n/Messages
+
+server: 
+  port: 80   # 定义服务端口
+

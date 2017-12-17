@@ -1,0 +1,29 @@
+spring:
+  profiles:
+    active: product
+
+--- 
+spring: 
+  profiles: dev
+#  thymeleaf:
+#    suffix: .htm
+  messages: 
+    basename: i18n/Messages
+    encoding: UTF-8
+    cache-seconds: 3600
+server:
+  port: 8080   # 定义服务端口
+
+
+
+--- 
+spring:
+  profiles: product
+#  thymeleaf:
+#    suffix: .htm
+  messages: 
+    basename: i18n/Messages
+    encoding: UTF-8
+    cache-seconds: 3600
+server:
+  port: 80   # 定义服务端口

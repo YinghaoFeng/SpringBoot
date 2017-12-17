@@ -1,0 +1,20 @@
+spring: 
+  kafka:
+    bootstrap-servers:
+    - kafka-single:9095
+    template:
+      default-topic: mldn-microboot
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    properties:
+      sasl.mechanism: PLAIN
+      security.protocol: SASL_PLAINTEXT
+  thymeleaf:
+    prefix: classpath:/templates/pages/ 
+  messages: 
+    basename: i18n/Messages
+
+server: 
+  port: 80   # 定义服务端口
+
